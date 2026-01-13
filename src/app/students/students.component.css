@@ -1,0 +1,42 @@
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        padding: 10px 5px;
+        outline: none;
+    }
+
+    li {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+
+    li span {
+        font-size: 18px;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    p{
+        font-size: 18px;
+    }
+   

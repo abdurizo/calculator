@@ -1,0 +1,17 @@
+<h1>Talabalar ro'yhati</h1>
+<form>
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Ism" />
+  <input type="number" [(ngModel)]="score" name="score" placeholder="Ball" />
+  <button (click)="addStudent()">Qo'shish</button>
+</form>
+<ul>
+  @for(student of students; track $index){
+  <li [style.background]="getColor(student.score)">
+    <span>{{ student.name }} </span>
+    <span>{{ student.score }} </span>
+    <button (click)="students.splice($index, 1)">Ochirish</button>
+  </li>
+  } @empty {
+    <p>Student yo'q</p>
+  }
+</ul>

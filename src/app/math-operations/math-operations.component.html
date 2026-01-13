@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="wrap">
+    <input type="number" class="input" placeholder="Son 1" [(ngModel)]="a"/>
+    <input type="number" class="input" placeholder="Son 2" [(ngModel)]="b" />
+    <div class="buttons">
+      <button class="button" (click)="isPlus()">➕</button>
+      <button class="button" (click)="isMinus()">➖</button>
+      <button class="button" (click)="isMultiplication()">✖️</button>
+      <button class="button" (click)="isDivision()">➗</button>
+    </div>
+    <div class="result">
+      <p>Natija: {{ result }}</p>
+    </div>
+  </div>
+</div>
