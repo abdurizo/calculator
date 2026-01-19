@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonHomeComponent } from '../button-home/button-home.component';
 
 @Component({
   selector: 'app-counter',
   standalone: true,
-  imports: [],
+  imports: [ButtonHomeComponent],
   templateUrl: './counter.component.html',
   styleUrl: './counter.component.css',
 })

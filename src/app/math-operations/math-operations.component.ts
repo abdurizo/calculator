@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ButtonHomeComponent } from '../button-home/button-home.component';
 
 @Component({
   selector: 'app-math-operations',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,ButtonHomeComponent],
   templateUrl: './math-operations.component.html',
   styleUrl: './math-operations.component.css',
 })

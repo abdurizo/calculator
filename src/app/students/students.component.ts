@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ButtonHomeComponent } from '../button-home/button-home.component';
 
 interface Student {
   name: string;
@@ -10,7 +11,7 @@ interface Student {
 @Component({
   selector: 'app-students',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule,ButtonHomeComponent],
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css'],
 })
