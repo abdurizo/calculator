@@ -1,3 +1,21 @@
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+    }
+    .wrap_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid #000;
+        border-radius: 10px;
+        padding: 20px;
+
+    }
     h1 {
         margin-bottom: 10px;
     }
