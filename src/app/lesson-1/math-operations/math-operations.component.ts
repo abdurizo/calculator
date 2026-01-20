@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonHomeComponent } from '../button-home/button-home.component';
+import { ButtonHomeComponent } from '../../button-home/button-home.component';
+
 
 @Component({
   selector: 'app-math-operations',

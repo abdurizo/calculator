@@ -10,19 +10,19 @@ export const routes: Routes = [
   {
     path: 'calculator',
     loadComponent: () =>
-      import('./math-operations/math-operations.component').then(
+      import('./lesson-1/math-operations/math-operations.component').then(
         (m) => m.MathOperationsComponent,
       ),
   },
   {
     path: 'counter',
     loadComponent: () =>
-      import('./counter/counter.component').then((m) => m.CounterComponent),
+      import('./lesson-1/counter/counter.component').then((m) => m.CounterComponent),
   },
   {
     path: 'students',
     loadComponent: () =>
-      import('./students/students.component').then((m) => m.StudentsComponent),
+      import('./lesson-2/students/students.component').then((m) => m.StudentsComponent),
   },
   {
     path:'**',

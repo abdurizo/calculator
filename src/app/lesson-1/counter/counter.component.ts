@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ButtonHomeComponent } from '../button-home/button-home.component';
+import { ButtonHomeComponent } from '../../button-home/button-home.component';
+
 
 @Component({
   selector: 'app-counter',
