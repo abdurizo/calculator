@@ -10,11 +10,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class CurrencyConverterComponent {
   uzb: number = 0;
-  eur: number = 0;
-  converterToEur(){
-   this.uzb = this.eur * 12000;
+  usd: number = 0;
+  converterToUsd(){
+   this.uzb = this.usd * 12000;
   }
   converterToUzb(){
-   this.eur = this.uzb / 12000;
+   this.usd = this.uzb / 12000;
   }
 }
