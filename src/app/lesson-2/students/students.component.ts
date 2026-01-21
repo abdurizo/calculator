@@ -32,8 +32,8 @@ export class StudentsComponent {
     this.score = null;
   }
   getColor(score: number): string {
-    if (score >= 90) return 'green';
-    else if (score >= 60) return 'yellow';
-    else return 'red';
+    if (score >= 90) return '#4cdb3ff1';
+    else if (score >= 60) return '#f4f807b0';
+    else return '#ff091d7e';
   }
 }

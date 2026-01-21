@@ -31,12 +31,12 @@ export const routes: Routes = [
   {
     path: 'routing',
     loadComponent: () =>
-      import('./lesson-4/home-for-lesson-4/home/home.component').then(
-        (m) => m.HomeComponent4,
+      import('./lesson-4/home-for-lesson-4/home-for-lesson-4.component').then(
+        (m) => m.HomeForLesson4Component,
       ),
     children: [
       {
-        path: 'users',
+        path: '',
         loadComponent: () =>
           import('./lesson-4/home-for-lesson-4/pages/users-page/users-page.component').then(
             (m) => m.UsersPageComponent,
@@ -54,6 +54,29 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./lesson-4/home-for-lesson-4/pages/login-page/login-page.component').then(
             (m) => m.LoginPageComponent,
+          ),
+      },
+    ],
+  },
+  {
+    path: 'additional-tasks',
+    loadComponent: () =>
+      import('./additional-tasks/additional-tasks.component').then(
+        (m) => m.AdditionalTasksComponent,
+      ),
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./additional-tasks/home-tasks/home-tasks.component').then(
+            (m) => m.HomeTasksComponent,
+          ),
+      },
+      {
+        path: 'currency-converter',
+        loadComponent: () =>
+          import('./additional-tasks/currency-converter/currency-converter.component').then(
+            (m) => m.CurrencyConverterComponent,
           ),
       },
     ],
