@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonHomeComponent } from '../../button-home/button-home.component';
 
-
 interface Student {
-  id:number;
+  id: number;
   name: string;
   score: number;
 }
@@ -13,7 +12,7 @@ interface Student {
 @Component({
   selector: 'app-students',
   standalone: true,
-  imports: [FormsModule, CommonModule,ButtonHomeComponent],
+  imports: [FormsModule, CommonModule, ButtonHomeComponent],
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css'],
 })
@@ -21,7 +20,7 @@ export class StudentsComponent {
   students: Student[] = [];
   name = '';
   score: number | null = null;
-  private nextId:number = 1;
+  private nextId: number = 1;
   /***
    */
   addStudent() {
@@ -34,8 +33,8 @@ export class StudentsComponent {
     this.name = '';
     this.score = null;
   }
-  deleteStudent(id:number){
-this.students = this.students.filter(student => student.id !== id)
+  deleteStudent(id: number) {
+    this.students = this.students.filter((student) => student.id !== id);
   }
   getColor(score: number): string {
     if (score >= 90) return '#4cdb3ff1';
